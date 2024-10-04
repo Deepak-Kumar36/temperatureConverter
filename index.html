@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature Convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="loading">
+        <div class="image">
+            <img src="https://cdn.dribbble.com/users/2973561/screenshots/5757826/loading__.gif" alt="">
+        </div>
+    </div>
+    <div class="dec">
+       <div class="txt">Temprature Convertor</div>
+    </div>
+    <form id="tempCacl" onsubmit="calculateTemp(); return false">
+        <label for="temp">Please enter the temprature that you want to convert.</label>
+        <br />
+        <input type="number" name="temp" id="temp">
+        <select name="temp_diff" id="temp_diff">
+            <option value="cel">°C</option>
+            <option value="Fah">°F</option>
+        </select><br />
+        <input type="submit" name="temp" value="submit" id="btn"/> <br />
+        <br />
+        <span id="resultContainer"></span>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
